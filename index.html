@@ -1,0 +1,422 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--================ FONT AWESOME ===================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <!--================ CSS ===================-->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <title>Responsive portfolio website - Crypticalcoder</title>
+    </head>
+    <body>
+        <!--================ STYLE SWITCHER ===================-->
+        <input type="radio" name="color" id="color-1">
+        <input type="radio" name="color" id="color-2">
+        <input type="radio" name="color" id="color-3">
+        <input type="radio" name="color" id="color-4">
+        <input type="radio" name="color" id="color-5">
+        <input type="radio" name="color" id="color-6">
+        <input type="radio" name="color" id="color-7">
+        <input type="radio" name="color" id="color-8">
+        <input type="radio" name="color" id="color-9">
+        <input type="radio" name="color" id="color-10">
+        <input type="checkbox" id="toggler">
+        <input type="checkbox" id="day-night">
+
+        <div class="style__switcher">
+            <label for="toggler" class="style__switcher-toggler">
+                <i class="fa-solid fa-gear fa-spin"></i>
+            </label>
+
+            <label for="day-night" class="style__switcher-theme">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
+
+            <h3 class="style__switcher-title">Theme Colors</h3>
+
+            <div class="style__switcher-colors">
+                <label for="color-1" class="color-1 color"></label>
+                <label for="color-2" class="color-2 color"></label>
+                <label for="color-3" class="color-3 color"></label>
+                <label for="color-4" class="color-4 color"></label>
+                <label for="color-5" class="color-5 color"></label>
+                <label for="color-6" class="color-6 color"></label>
+                <label for="color-7" class="color-7 color"></label>
+                <label for="color-8" class="color-8 color"></label>
+                <label for="color-9" class="color-9 color"></label>
+                <label for="color-10" class="color-10 color"></label>
+            </div>
+        </div>
+
+        <!-- =============== HEADER ======================= -->
+        <header class="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">Tuấn Vũ</a>
+
+                <input type="checkbox" id="nav-toggler">
+
+                <label for="nav-toggler" class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">Experience</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Portfolio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- =============== MAIN ======================== -->
+        <main class="main">
+            <!-- ================ HOME ======================== -->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <span class="home__small">Hello</span>
+                        <h1 class="home__title">
+                            <span>I'm</span> Tuan Vu <br> 
+                            a <span>Business Analyst</span> 
+                        </h1>
+
+                        <p class="home__description">
+                            Xin chào cả nhà lại là Tuấn Vũ đây
+                        </p>
+
+                        <div class="home__btns">
+                            <a href="#contact" class="btn">Hire Me</a>
+                            <a href="portfolio" class="btn btn--transparent">Portfolio</a>
+                        </div>
+                    </div>
+
+                    <div class="home__img-wrapper"> 
+                        <img src="images/Home2.jpg" alt="" class="home__img" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ ABOUT ======================== -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__img-wrapper">
+                        <img src="images/About1.jpg" alt="" class="about__img">
+                        <img src="images/About1.jpg" alt="" class="about__img">
+                        <img src="images/About1.jpg" alt="" class="about__img">
+                        <img src="images/About1.jpg" alt="" class="about__img">
+                    </div>
+
+                    <div class="about__content">
+                        <h2 class="section__title" data-title="Who am I?">
+                            I'm Tuan Vu, a Business Analyst
+                        </h2>
+
+                        <p class="about__description">Xin chào cả nhà lại là Tuấn Vũ đây</p>
+
+
+                        <ul class="about__data grid">
+                            <li class="data__item">
+                                <h3 class="data_title">Name:</h3>
+                                <span class="data__description">Vu Anh Tuan</span>
+                            </li>
+
+                            <li class="data__item">
+                                <h3 class="data_title">Age:</h3>
+                                <span class="data__description">22 Years Old</span>
+                            </li>
+
+                            <li class="data__item">
+                                <h3 class="data_title">From:</h3>
+                                <span class="data__description">Long Bien, Hanoi</span>
+                            </li>
+
+                            <li class="data__item">
+                                <h3 class="data_title">Email:</h3>
+                                <span class="data__description about__link">vuatuan1706@gmail.com</span>
+                            </li>
+                        </ul>
+
+                        <div class="about__bottom">
+                            <a href="" class="btn">Download CV</a>
+
+                            <div class="about__social-links">
+                                <a href="" class="about__social-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="" class="about__social-link">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+
+                                <a href="" class="about__social-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ QUALIFICATION ======================== -->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title title-center" data-title="My Journey">
+                    Qualification
+                </h2>
+
+                <div class="resume__container container grid">
+                    <div class="resume__group">
+                        <h3 class="resume__heading">Education</h3>
+
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">Hanoi University of Civil Engineering</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__title">Information Technology/Systems Network</h3>
+                                        <span class="resume__date">2019 - Present</span>
+                                    </div>
+
+                                    <p class="resume__description">
+                                        Currently a junior majoring in Systems Network
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">Nguyen Gia Thieu Highschool</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <span class="resume__date">2016 - 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__group">
+                        <h3 class="resume__heading">Work Experience</h3>
+
+                        <div class="resume__items">
+                            <div class="resume__item">
+                                <div class="resume__header">
+                                    <h3 class="resume__subtitle">VN CLOUD New Technology Solutions Co., Ltd</h3>
+                                    <span class="resume__icon">+</span>
+                                </div>
+
+                                <div class="resume__content">
+                                    <div class="resume__date-title">
+                                        <h3 class="resume__title">Web Developer Trainee</h3>
+                                        <span class="resume__date">10/2022 - 02/2023</span>
+                                    </div>
+
+                                    <p class="resume__description">
+                                        Developed and maintained web applications using .NET Frameworks, HTML, CSS, Bootstrap, SQL server, and Angular.
+                                        <br>
+                                        Member of Toyota Web Sales Project.
+                                        <br>
+                                        Collaborated with sales team members to implement new feature developments.
+                                        <br>
+                                        Communicated with other team members regarding project status and issues as they arise from users' feedback.
+                                        <br>
+                                        Implemented websites and landing pages from concept through deployment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ SERVICES ========================
+            <section class="services section" id="services">
+                <h2 class="section__title title-center" data-title="Services">
+                    What I do for you
+                </h2>
+
+                <div class="services__container container grid">
+                    <div class="services__item">
+                        <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+                        <h3 class="services__title"></h3>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- ================ SKILLS ======================== -->
+            <section class="skills section" id="skills">
+                <h2 class="section__title title-center" data-title="My Talent">
+                    Professional Skills
+                </h2>
+
+                <div class="skills__container container grid">
+                    <div class="skills__item">
+                        <div class="skills__titles">
+                            <h3 class="skills name">SQL database</h3>
+                            <span class="skills__no">80 %</span>
+                        </div>
+
+                        <p class="skills__description">
+                            Familiar with the basic knowledge and experience of the actual project data.
+                        </p>
+
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 85%">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__item">
+                        <div class="skills__titles">
+                            <h3 class="skills name">Business Anlysis</h3>
+                            <span class="skills__no">70 %</span>
+                        </div>
+
+                        <p class="skills__description">
+                            Ability to use Visual Paradigm to detail a project at university and solutions.
+                        </p>
+
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 70%">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__item">
+                        <div class="skills__titles">
+                            <h3 class="skills name">Communication Skills </h3>
+                            <span class="skills__no">80 %</span>
+                        </div>
+
+                        <p class="skills__description">
+                            Ability to collaborate across different departments or teams, sharing ideas, knowledge, and
+                            information which helps coordinate efforts, resolve conicts, and foster a positive work environment.
+                        </p>
+
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 80%">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__item">
+                        <div class="skills__titles">
+                            <h3 class="skills name">Critical thinking </h3>
+                            <span class="skills__no">80 %</span>
+                        </div>
+
+                        <p class="skills__description">
+                            Look at a problem from various aspects, mostly risky elements. 
+                        </p>
+
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 80%">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ PORTFOLIO ======================== -->
+            <section class="works section" id="works">
+                <h2 class="section__title title-center" data-title="My Portfolio">
+                    Recent Works
+                </h2>
+            </section>
+
+            <!-- ================ TESTIMONIALS ========================
+            <section class="testimonials" id="testimonials"></section> -->
+
+            <!-- ================ CONTACT ======================== -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title title-center" data-title="Get in touch">
+                    Contact me
+                </h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__item">
+                        <i class="fa-solid fa-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__data">0981390396</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__data">vuatuan1706@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-brands fa-square-facebook contact__icon" style="font-size: 25px"></i>
+
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100008289902411" style="color: rgb(231, 222, 222)">Tuấn Vũ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ================ FOOTER ======================== -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <p class="footer__copyright">&copy; 2023 Tuan Vu. All Rights Reserved</p>
+
+                <div class="footer__social-links">
+                    <a href="" class="footer__social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="" class="footer__social-link">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+
+                    <a href="" class="footer__social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+ </html>
